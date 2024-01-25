@@ -1,0 +1,30 @@
+# ##################################################
+# env vars
+# ##################################################
+
+# krew
+export KREW_ROOT="$HOME/.krew"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+
+export path=(
+    "$repoBaseDir/bin"  # private commands
+    "$BUN_INSTALL/bin"  # bun
+    "/opt/homebrew/bin" # brew
+    "$HOME/.docker/bin" # docker
+    "$KREW_ROOT/bin"    # krew
+    "$HOME/go/bin"      # go
+    $path
+)
+
+export fpath=(
+    $fpath
+    "$HOME/.local/share/zsh/completions"                # custom
+    "$HOME/.bun"                                        # bun
+    "/opt/homebrew/share/zsh/site-functions"            # brew
+    "/opt/homebrew/opt/fzf/shell/completion.zsh"        # fzf
+)
+
+export EDITOR=hx
+export SSH_AUTH_SOCK="/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"

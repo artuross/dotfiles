@@ -1,0 +1,70 @@
+local repoBaseDir="$HOME/Code/github.com/artuross/dotfiles"
+
+# ##################################################
+# zinit setup
+# ##################################################
+if [[ ! -f "/opt/homebrew/opt/zinit/zinit.zsh" ]]; then
+    echo 'zinit not installed.'
+    echo 'Check https://github.com/zdharma-continuum/zinit#automatic'
+fi
+
+source "/opt/homebrew/opt/zinit/zinit.zsh"
+autoload -Uz _zinit
+(( ${+_comps} )) && _comps[zinit]=_zinit
+
+# ##################################################
+# plugins
+# ##################################################
+zinit ice lucid wait'0'
+
+zstyle ':autocomplete:*' fzf-completion yes
+zstyle ':autocomplete:*' insert-unambiguous yes
+zstyle ':autocomplete:recent-dirs' backend zoxide
+
+zi light atuinsh/atuin
+zi light marlonrichert/zsh-autocomplete
+zi light zsh-users/zsh-completions
+zi light zsh-users/zsh-syntax-highlighting
+zi snippet OMZP::dotenv
+
+zinit light-mode for \
+    zdharma-continuum/zinit-annex-as-monitor \
+    zdharma-continuum/zinit-annex-bin-gem-node \
+    zdharma-continuum/zinit-annex-patch-dl \
+    zdharma-continuum/zinit-annex-rust
+
+autoload -Uz compinit && compinit
+zmodload -i zsh/complist
+rm -f ~/.zcompdump; compinit
+autoload -U +X compinit && compinit
+autoload -U +X bashcompinit && bashcompinit
+
+# ##################################################
+# aliases
+# ##################################################
+alias -g ...='cd ../..'
+alias -g ....='cd ../../..'
+alias -g .....='cd ../../../..'
+alias -g ......='cd ../../../../..'
+
+alias g="git"
+alias k="kubectl"
+alias t="talosctl"
+
+alias ls='exa'
+alias ll='exa -lh'
+alias la='exa -lah'
+
+# ##################################################
+# nice tools
+# ##################################################
+eval "$(thefuck --alias)"
+eval "$(zoxide init zsh)"
+eval "$(starship init zsh)"
+
+# ##################################################
+# work stuff
+# ##################################################
+if [ -f "$HOME/.work/zshrc" ]; then
+    source "$HOME/.work/zshrc"
+fi
