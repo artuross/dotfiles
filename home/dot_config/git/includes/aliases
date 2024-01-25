@@ -1,0 +1,22 @@
+[alias]
+    # Print this file to reveal all aliases.
+    aliases     = !bat --style header-filename --language 'Git Config' ~/.config/git/includes/aliases
+
+    # Amend last commit.
+    amend       = commit --amend
+
+    # Use internal diffing mechanism instead of difftastic.
+    di          = diff --no-ext-diff
+
+    # Resets all changes in a branch.
+    nevermind   = !git reset --hard HEAD && git clean -fd
+
+    # Resets all changes in a branch and removes all ignored files.
+    # Will also remove ignored .env files, etc. so use with care.
+    nuke        = !git reset --hard HEAD && git clean -fdx
+
+    # Create empty commit and push it. Useful for triggering CI.
+    trigger     = !git commit --allow-empty -m trigger && git push
+
+    # Undoes the previous commit leaving everything else intact.
+    uncommit    = reset --soft 'HEAD^'

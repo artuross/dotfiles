@@ -1,0 +1,87 @@
+[commit]
+    # Sign commits with private key.
+    gpgSign = true
+
+[core]
+    # Use delta as the pager. Used by default for commands other than diff.
+    pager = delta --diff-so-fancy
+
+[delta]
+    # Show line numbers in diffs.
+    line-numbers = true
+
+[delta "interactive"]
+    # Do not show +- characters.
+    keep-plus-minus-markers = false
+
+[diff]
+    # Use patience algorithm for diffing. It has a nice output.
+    algorithm       = patience
+
+    # Add additional colors for moved fragments.
+    colorMoved      = dimmed-zebra
+
+    # Ignore whitespace changes for moved blocks.
+    colorMovedWs    = allow-indentation-change
+
+    # Use difftastic for diffs.
+    # For commands other than diff, need to use --ext-diff.
+    # Usage:
+    #   git diff
+    #   git log -p --ext-diff
+    external        = difft --display side-by-side-show-both
+
+[fetch]
+    # Remove references to remote branches that have been deleted.
+    prune = true
+
+    # Remove references to remote tags that have been deleted.
+    pruneTags = true
+
+[gpg]
+    # Use SSH instead of SSH key.
+    format = ssh
+
+[gpg "ssh"]
+    # Use 1Password to sign commits.
+    program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+
+[help]
+    # Automatically fix typos in commands.
+    autoCorrect = 1
+
+[init]
+    # New repos have main as the branch name.
+    defaultBranch = main
+
+[interactive]
+    # Use delta as the pager for interactive commands.
+    diffFilter = delta --color-only --features=interactive
+
+[push]
+    # When pushing to a branch without remote, automatically --set-upstream.
+    autoSetupRemote = true
+
+    # Always push to remote branch of the same name.
+    default = current
+
+[rerere]
+    # Automatically record and reuse conflict resolutions.
+    enabled = true
+
+[status]
+    showUntrackedFiles = all
+
+[user]
+    name    = Artur Rychlewicz
+    email   = 8393226+artuross@users.noreply.github.com
+
+[include]
+    # Include aliases.
+    path = includes/aliases
+
+    # Include handy shortcuts for cloning.
+    path = includes/overrides
+
+    # Include local configuration (path is ~/.config/git/includes/config.local).
+    path = includes/config.local

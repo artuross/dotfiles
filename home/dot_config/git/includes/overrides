@@ -1,0 +1,10 @@
+[url "git@github.com:"]
+    # gh:artuross/dotfiles
+    insteadOf = gh:
+
+    # normal github.com URLs
+    insteadOf = https://github.com/
+
+[url "git@github.com:artuross/"]
+    # my:dotfiles
+    insteadOf = my:
