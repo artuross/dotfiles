@@ -43,8 +43,8 @@ defaults write com.apple.dock minimize-to-application -bool true
 
 # Change Keyboard Type -> ANSI
 # sets keyboard layout to ANSI for ALL known keyboards
-value=`defaults read /Library/Preferences/com.apple.keyboardtype.plist keyboardtype | sd '= [0-9]+;' '= 40;'`
-sudo defaults write /Library/Preferences/com.apple.keyboardtype.plist keyboardtype $value
+# value=`defaults read /Library/Preferences/com.apple.keyboardtype.plist keyboardtype | sd '= [0-9]+;' '= 40;'`
+# sudo defaults write /Library/Preferences/com.apple.keyboardtype.plist keyboardtype $value
 
 # Keyboard Shortcuts -> Function Keys -> Use F1, F2, etc. keys as standard function keys
 defaults write -g com.apple.keyboard.fnState -bool true
