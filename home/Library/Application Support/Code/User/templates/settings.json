@@ -2,20 +2,50 @@
   //
   // Core
   // --------------------------------------------------
+  "breadcrumbs.enabled": true,
+  "breadcrumbs.filePath": "on",
+  "diffEditor.codeLens": true,
+  "breadcrumbs.icons": false,
+  "breadcrumbs.symbolPath": "off",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.accessibilitySupport": "off",
   "editor.bracketPairColorization.enabled": true,
   "editor.codeLensFontFamily": "'Fira Code Retina'",
   "editor.cursorBlinking": "phase",
+  "editor.cursorSurroundingLines": 10,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.detectIndentation": true,
+  "editor.dragAndDrop": false,
+  "editor.experimental.asyncTokenization": true,
   "editor.find.seedSearchStringFromSelection": "selection",
   "editor.fontFamily": "FiraCode Nerd Font",
   "editor.fontLigatures": true,
   "editor.fontWeight": "200",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
-  "explorer.incrementalNaming": "smart",
+  "editor.guides.bracketPairs": "active",
+  "editor.guides.bracketPairsHorizontal": "active",
+  "editor.guides.highlightActiveIndentation": "always",
+  "editor.guides.indentation": false,
+  "editor.hideCursorInOverviewRuler": false,
+  "editor.hover.delay": 200,
+  "editor.insertSpaces": true,
+  "editor.lightbulb.enabled": false,
+  "editor.lineNumbers": "relative",
+  "editor.matchBrackets": "never",
+  "editor.minimap.enabled": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.occurrencesHighlight": "off",
+  "editor.overviewRulerBorder": false,
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.semanticHighlighting.enabled": true,
   "editor.semanticTokenColorCustomizations": {
     "enabled": true
   },
+  "editor.showFoldingControls": "never",
+  "editor.smoothScrolling": true,
+  "editor.wordWrap": "off",
   "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
   // https://github.com/antfu/vscode-file-nesting-config
@@ -100,15 +130,33 @@
     "vite.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, rspack.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
     "vue.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, rspack.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*"
   },
+  "explorer.incrementalNaming": "smart",
   "explorer.sortOrder": "filesFirst",
   "files.eol": "\n",
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
+  "multiDiffEditor.experimental.enabled": true,
+  "search.showLineNumbers": true,
+  "search.smartCase": true,
+  "window.commandCenter": false,
+  "window.restoreWindows": "none",
+  "window.titleBarStyle": "custom",
   "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+  "workbench.editor.closeOnFileDelete": true,
+  "workbench.editor.limit.enabled": false,
+  "workbench.editor.pinnedTabSizing": "shrink",
+  "workbench.editor.preventPinnedEditorClose": "keyboard",
+  "workbench.editor.tabActionCloseVisibility": false,
   "workbench.iconTheme": "symbols",
+  "workbench.layoutControl.enabled": false,
+  "workbench.list.smoothScrolling": true,
+  "workbench.sideBar.location": "right",
+  "workbench.statusBar.visible": true,
+  "workbench.tips.enabled": false,
+  "workbench.tree.enableStickyScroll": false,
   "workbench.tree.indent": 20,
-  "workbench.tree.renderIndentGuides": "onHover",
+  "workbench.tree.renderIndentGuides": "none",
 
   //
   // Go: golang.go
@@ -153,7 +201,7 @@
   //
   // Symbols: miguelsolorio.symbols
   // --------------------------------------------------
-  "symbols.hidesExplorerArrows": false,
+  "symbols.hidesExplorerArrows": true,
 
   //
   // Syntax Highlighter: evgeniypeshkov.syntax-highlighter
