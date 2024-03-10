@@ -10,8 +10,9 @@ export BUN_INSTALL="$HOME/.bun"
 
 export path=(
     "$repoBaseDir/bin"  # private commands
-    "$BUN_INSTALL/bin"  # bun
+    "$HOME/.asdf/shims" # asdf
     "/opt/homebrew/bin" # brew
+    "$BUN_INSTALL/bin"  # bun
     "$HOME/.docker/bin" # docker
     "$KREW_ROOT/bin"    # krew
     "$HOME/go/bin"      # go
