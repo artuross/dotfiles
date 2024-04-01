@@ -1,0 +1,16 @@
+#!/bin/zsh
+
+currType=`yabai -m query --spaces | jq -r '.[] | select(."has-focus") | .type'`;
+
+if [[ "$currType" == "bsp" ]]; then
+  nextType="float"
+else
+  nextType="bsp"
+fi
+
+echo 'Changing layout type'
+echo "Previous layout type: '$currType'"
+echo "New layout type: '$nextType'"
+
+yabai -m space --layout $nextType
+noti -t "Space layout changed" -m "Current layout: $nextType"
