@@ -1,0 +1,8 @@
+# yabai
+# ----------------------------------------------
+
+# toggle yabai for active window
+hyper - space : yabai -m window --toggle float
+
+# yabai toggle between bsp and floating layout for active space
+hyper - t : yabai-toggle-layout
