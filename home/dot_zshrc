@@ -1,5 +1,3 @@
-local repoBaseDir="$HOME/Code/github.com/artuross/dotfiles"
-
 # ##################################################
 # zinit setup
 # ##################################################

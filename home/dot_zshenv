@@ -2,6 +2,8 @@
 # env vars
 # ##################################################
 
+export DOTFILES_DIR="$HOME/Code/github.com/artuross/dotfiles"
+
 # krew
 export KREW_ROOT="$HOME/.krew"
 
@@ -9,7 +11,7 @@ export KREW_ROOT="$HOME/.krew"
 export BUN_INSTALL="$HOME/.bun"
 
 export path=(
-    "$repoBaseDir/bin"  # private commands
+    "$DOTFILES_DIR/bin" # private commands
     "$HOME/.asdf/shims" # asdf
     "/opt/homebrew/bin" # brew
     "$BUN_INSTALL/bin"  # bun
