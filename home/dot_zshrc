@@ -58,7 +58,6 @@ alias la='exa -lah'
 # ##################################################
 # nice tools
 # ##################################################
-eval "$(thefuck --alias)"
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
 
