@@ -1,8 +1,37 @@
-# yabai
-# ----------------------------------------------
+# Yabai
+# #############################################################################
 
-# toggle yabai for active window
+# window
+# ---------------------------------------------------------
+
+# toggle fullscreen for active window
+hyper - f : yabai -m window --toggle zoom-fullscreen
+
+# toggle bsp for active window
 hyper - space : yabai -m window --toggle float
 
-# yabai toggle between bsp and floating layout for active space
+# focus window
+hyper - i : yabai -m window --focus north
+hyper - k : yabai -m window --focus south
+hyper - l : yabai -m window --focus east
+hyper - j : yabai -m window --focus west
+
+# move active window to space
+hyper - 0x2B : yabai -m window --space prev # ,
+hyper - 0x2F : yabai -m window --space next # .
+
+# space
+# ---------------------------------------------------------
+
+# toggle between bsp and floating layout for active space
 hyper - t : yabai-toggle-layout
+
+# balance space
+hyper - b : yabai -m space --balance
+
+# display
+# ---------------------------------------------------------
+
+# focus display
+hyper - n : yabai -m display --focus west
+hyper - m : yabai -m display --focus east
