@@ -1,0 +1,7 @@
+#!/bin/zsh
+
+# install packages from Brewfile
+brew bundle install --global --force --formula --cask --tap
+
+# update Brewfile
+brewfile-dump
