@@ -11,7 +11,8 @@ export KREW_ROOT="$HOME/.krew"
 export BUN_INSTALL="$HOME/.bun"
 
 export path=(
-    "$DOTFILES_DIR/bin" # private commands
+    "$DOTFILES_DIR/bin" # dotfiles
+    "$HOME/.local/bin"  # local
     "$HOME/.asdf/shims" # asdf
     "/opt/homebrew/bin" # brew
     "$BUN_INSTALL/bin"  # bun
