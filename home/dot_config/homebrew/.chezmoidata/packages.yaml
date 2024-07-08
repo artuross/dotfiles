@@ -45,4 +45,5 @@ homebrew:
     - font-fira-code
     - font-fira-code-nerd-font
     - hyperkey
+    - kitty
     - zed
