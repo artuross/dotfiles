@@ -40,6 +40,7 @@ homebrew:
     - zoxide
     - zx
   casks:
+    - 1password-cli
     - appcleaner
     - docker
     - font-fira-code
