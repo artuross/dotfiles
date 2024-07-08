@@ -9,7 +9,7 @@ homebrew:
     - difftastic
     - dive
     - dust
-    - exa
+    - eza
     - fd
     - fdupes
     - fzf

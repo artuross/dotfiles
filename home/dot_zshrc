@@ -49,9 +49,9 @@ alias g="git"
 alias k="kubectl"
 alias t="talosctl"
 
-alias ls='exa'
-alias ll='exa -lh'
-alias la='exa -lah'
+alias ls='eza'
+alias ll='eza -lh'
+alias la='eza -lah'
 
 # ##################################################
 # nice tools
