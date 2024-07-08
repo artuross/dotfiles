@@ -44,6 +44,7 @@ homebrew:
     - docker
     - font-fira-code
     - font-fira-code-nerd-font
+    - hammerspoon
     - hyperkey
     - kitty
     - zed
