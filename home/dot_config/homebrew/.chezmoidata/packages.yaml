@@ -47,5 +47,6 @@ homebrew:
     - hammerspoon
     - hyperkey
     - kitty
+    - raycast
     - visual-studio-code
     - zed
