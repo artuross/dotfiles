@@ -47,4 +47,5 @@ homebrew:
     - hammerspoon
     - hyperkey
     - kitty
+    - visual-studio-code
     - zed
