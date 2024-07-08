@@ -39,3 +39,10 @@ homebrew:
     - zinit
     - zoxide
     - zx
+  casks:
+    - appcleaner
+    - docker
+    - font-fira-code
+    - font-fira-code-nerd-font
+    - hyperkey
+    - zed
