@@ -5,6 +5,9 @@
     # Amend last commit.
     amend       = commit --amend
 
+    # Shows default upstream branch configured for the repository.
+    default     = !git symbolic-ref refs/remotes/origin/HEAD --short | sd '^origin/' ''
+
     # Use internal diffing mechanism instead of difftastic.
     di          = diff --no-ext-diff
 

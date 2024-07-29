@@ -70,11 +70,12 @@
     enabled = true
 
 [status]
+    # Extend `git status` to show untracked files.
     showUntrackedFiles = all
 
 [user]
+    # Name to use for commits.
     name    = Artur Rychlewicz
-    email   = 8393226+artuross@users.noreply.github.com
 
 [include]
     # Include aliases.
@@ -85,3 +86,7 @@
 
     # Include local configuration (path is ~/.config/git/includes/config.local).
     path = includes/config.local
+
+[includeIf "gitdir:~/Code/github.com/artuross/"]
+    # Include personal configuration.
+    path = includes/config.personal
