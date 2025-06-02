@@ -18,6 +18,9 @@ defaults write com.apple.dock tilesize -int 40
 # don't show recent apps
 defaults write com.apple.dock show-recents -bool false
 
+# scroll up on a Dock icon to show all Space's opened windows for an app, or open stack
+defaults write com.apple.dock scroll-to-open -bool true
+
 # preserve spaces order in Mission Control
 defaults write com.apple.dock mru-spaces -bool false
 
