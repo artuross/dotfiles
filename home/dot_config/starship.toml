@@ -1,0 +1,21 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = true
+
+[aws]
+disabled = true
+
+[battery]
+disabled = true
+
+[gcloud]
+disabled = true
+
+[golang]
+symbol = " "
+
+[nodejs]
+disabled = true
+
+[terraform]
+disabled = true
