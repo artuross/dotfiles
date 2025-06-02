@@ -1,0 +1,25 @@
+[alias]
+    # print this file to reveal all aliases
+    aliases     = !bat --style header-filename --language 'Git Config' ~/.config/git/includes/aliases
+
+    # amend last commit
+    amend       = commit --amend
+
+    # shows default upstream branch configured for the repository
+    default     = !git symbolic-ref refs/remotes/origin/HEAD --short | sd '^origin/' ''
+
+    # use internal diffing mechanism instead of difftastic
+    di          = diff --no-ext-diff
+
+    # resets all changes in a branch
+    nevermind   = !git reset --hard HEAD && git clean --force -d
+
+    # resets all changes in a branch and removes all ignored files
+    # will also remove ignored `.env` files, etc. so use with care
+    nuke        = !git reset --hard HEAD && git clean --force -dx
+
+    # create empty commit and push it; useful for triggering CI
+    trigger     = !git commit --allow-empty --message trigger && git push
+
+    # undoes the previous commit leaving everything else intact
+    uncommit    = reset --soft 'HEAD^'

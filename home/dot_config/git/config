@@ -1,0 +1,92 @@
+[commit]
+    # sign commits with private key
+    gpgSign = true
+
+[core]
+    # use delta as the pager; used by default for commands other than diff
+    pager = delta --diff-so-fancy
+
+[delta]
+    # show line numbers in diffs
+    line-numbers = true
+
+[delta "interactive"]
+    # do not show +- characters
+    keep-plus-minus-markers = false
+
+[diff]
+    # use patience algorithm for diffing; it has a nice output
+    algorithm       = patience
+
+    # add additional colors for moved fragments
+    colorMoved      = dimmed-zebra
+
+    # ignore whitespace changes for moved blocks
+    colorMovedWs    = allow-indentation-change
+
+    # use difftastic for diffs
+    # for commands other than diff, need to use `--ext-diff`
+    # usage:
+    #   git diff
+    #   git log --patch --ext-diff
+    external        = difft --display side-by-side-show-both
+
+[fetch]
+    # remove references to remote branches that have been deleted
+    prune = true
+
+    # remove references to remote tags that have been deleted
+    pruneTags = true
+
+[gpg]
+    # use SSH instead of SSH key
+    format = ssh
+
+[gpg "ssh"]
+    # use 1Password to sign commits
+    program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+
+[help]
+    # automatically fix typos in commands
+    autoCorrect = 1
+
+[init]
+    # new repos have main as the branch name
+    defaultBranch = main
+
+[interactive]
+    # use delta as the pager for interactive commands
+    diffFilter = delta --color-only --features=interactive
+
+[push]
+    # when pushing to a branch without remote, automatically `--set-upstream`
+    autoSetupRemote = true
+
+    # always push to remote branch of the same name
+    default = current
+
+[rerere]
+    # automatically record and reuse conflict resolutions
+    enabled = true
+
+[status]
+    # extend `git status` to show untracked files
+    showUntrackedFiles = all
+
+[user]
+    # name to use for commits
+    name    = Artur Rychlewicz
+
+[include]
+    # include aliases
+    path = includes/aliases
+
+    # include handy shortcuts for cloning
+    path = includes/overrides
+
+    # include local configuration
+    path = includes/config.local
+
+[includeIf "gitdir:~/Code/github.com/artuross/"]
+    # include personal configuration
+    path = includes/config.personal

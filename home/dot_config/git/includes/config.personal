@@ -1,0 +1,10 @@
+[user]
+    # public email to use for commits
+    email   = 8393226+artuross@users.noreply.github.com
+
+    # public SSH key used for commit signing
+    signingkey = ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDXXoknyGxCmTacP3lCVfCuuMUGx1b7P4SNxF42oDLB76SBjWvq7rMskfvPiiqCQY5QoO9YDD7E+uiBLsGSGChmi0ja+xI2HwLwu6YQEgpMm/xdHVKy3hnrsBjjlawL/rt3ouE4uhfeMWgP5n9qiokUhd9DdyftfCksNCMVd9sN1pQI4ru1XzQMz1lA74pkKzpDnDpXAR3UzOvq479fSyDmUdOBMoiq+9FQz1tZ32hXSgVlD4otu7ovVViLYOcnClDjhZuok7uCJ17DC2Flb6FjrxyxgEGTeU0BeUK05UfgHUDmKu9iE0u33POUhvEVdObXI7z30knQuBNocIu92kKGyW3Xl7Fi8X61lJZepAH6yQEU0u4WEMbFZrgcogRDGT9LPFJG7MfgqlGGzOmvgtw5PwVfy6MHi+JWiKrJJTkeDT2wjT3xJ4NsDd1GHCBIse6+0HGKkDppvhsB5u98S215qE3Ii9yR6wU4gahFDSRtJcS2guzvK8z0zHk5/uGojHE=
+
+[include]
+    # include local overrides to the personal config
+    path = includes/config.personal.local
