@@ -11,6 +11,14 @@ $env.config.buffer_editor = "hx"
 # disable welcome message
 $env.config.show_banner = false
 
+# set aliases
+alias g = git
+alias k = kubectl
+alias t = talosctl
+
+alias ll = eza --long --all
+alias ls = eza
+
 # load integrations
 source ~/.local/share/atuin/init.nu
 source ~/.local/share/carapace/init.nu
