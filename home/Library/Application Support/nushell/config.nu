@@ -10,6 +10,7 @@ $env.config.show_banner = false
 # load integrations
 source ~/.local/share/atuin/init.nu
 source ~/.local/share/starship/init.nu
+source ~/.local/share/zoxide/init.nu
 
 # load completions
 source ~/.local/share/atuin/completions.nu
