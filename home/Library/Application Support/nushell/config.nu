@@ -6,3 +6,9 @@ $env.config.buffer_editor = "hx"
 
 # disable welcome message
 $env.config.show_banner = false
+
+# load integrations
+source ~/.local/share/atuin/init.nu
+
+# load completions
+source ~/.local/share/atuin/completions.nu

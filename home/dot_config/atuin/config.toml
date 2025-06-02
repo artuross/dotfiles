@@ -1,0 +1,14 @@
+# enable shortcuts for the command list: ⌃ + [1-9]
+ctrl_n_shortcuts = true
+
+# enter to execute, tab to edit
+enter_accept = true
+
+# show preview of the selected command
+show_preview = true
+
+# render Atuin UI in compact mode
+style = "compact"
+
+# enable the workspace pseudo-filter
+workspaces = true
