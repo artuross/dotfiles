@@ -1,0 +1,66 @@
+{
+  // disable panels
+  "collaboration_panel": {
+    "button": false
+  },
+
+  // disable telemetry
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+
+  // font settings
+  "agent_font_size": 15,
+  "buffer_font_family": "FiraCode Nerd Font",
+  "buffer_font_size": 15,
+  "buffer_font_weight": 300,
+  "ui_font_family": "FiraCode Nerd Font",
+  "ui_font_size": 15,
+
+  // don't blink cursor in the editor
+  "cursor_blink": false,
+
+  // show hover hints instanly
+  "hover_popover_delay": 0,
+
+  // restore only lastly closed workspace on restart
+  "restore_on_startup": "last_workspace",
+
+  // terminal settings
+  "terminal": {
+    // cursor settings
+    "cursor_shape": "bar",
+    "blinking": "terminal_controlled",
+
+    // font settings
+    "font_size": 13,
+    "font_family": "FiraCode Nerd Font",
+    "font_weight": 300,
+
+    // max scroll buffer
+    "max_scroll_history_lines": 100000,
+
+    // use nushell
+    "shell": {
+      "program": "nu"
+    },
+
+    // don't show breadcrumbs
+    "toolbar": {
+      "breadcrumbs": false
+    }
+  },
+
+  // theme settings
+  "icon_theme": "Symbols",
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "Rosé Pine Moon"
+  },
+
+  // automatically adjusts search case sensitivity if the query
+  // contains uppercase letters, case insensitive otherwise
+  "use_smartcase_search": true
+}
