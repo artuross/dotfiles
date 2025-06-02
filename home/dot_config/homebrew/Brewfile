@@ -1,0 +1,55 @@
+# Apps
+cask "1password-cli"           # 1password integration
+cask "appcleaner"              # for deleting apps
+cask "arc"                     # browser
+cask "chatgpt"                 # ChatGPT app
+cask "docker"                  # Docker Desktop
+cask "github"                  # Github Desktop
+cask "hammerspoon"             # for custom scripts
+cask "kitty"                   # terminal
+cask "raycast"                 # command center
+cask "visual-studio-code"      # editor
+cask "zed"                     # editor
+cask "zen"                     # browser
+
+# CLIs
+brew "atuin"                   # better shell history
+brew "awscli"                  # AWS cli
+brew "bat"                     # fancier cat
+brew "carapace"                # better Nushell completions
+brew "chezmoi"                 # managing dotfiles
+brew "difftastic"              # syntax aware diffs
+brew "dive"                    # inspecing Docker images
+brew "dust"                    # better disk usage
+brew "eza"                     # better ls
+brew "fd"                      # better find
+brew "fdupes"                  # finds duplicate files
+brew "fzf"                     # fuzzy completion
+brew "git"                     # vcs
+brew "git-delta"               # better diffs
+brew "helix"                   # better Vim
+brew "hyperfine"               # for benchmarking
+brew "jq"                      # JSON processor
+brew "just"                    # better make
+brew "k9s"                     # k8s TUI
+brew "kubectx"                 # for switching context and namespaces
+brew "lazydocker"              # Docker TUI
+brew "lazygit"                 # Git TUI
+brew "minikube"                # for spinning k8s clusters
+brew "mise"                    # tool version management
+brew "noti"                    # notification popups
+brew "nushell"                 # shell
+brew "procs"                   # better ps
+brew "ripgrep"                 # better grep
+brew "ripgrep-all"             # ripgrep, but also PDFs, etc.
+brew "rm-improved"             # safer rm
+brew "sd"                      # better sed
+brew "starship"                # Talos
+brew "stern"                   # better prompt
+brew "viddy"                   # kubernetes log
+brew "yq"                      # watching command output
+brew "zoxide"                  # jq, but for YAML
+brew "siderolabs/tap/talosctl" # faster cd
+
+# Fonts
+cask "font-fira-code-nerd-font"
