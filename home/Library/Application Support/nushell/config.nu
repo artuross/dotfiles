@@ -1,6 +1,10 @@
 # environment variables: PATH
 $env.Path = ($env.Path | prepend '/opt/homebrew/bin')
 
+# environment variables: enables completion from ZSH
+# TODO: need to figure out why some completions are not loaded
+$env.CARAPACE_BRIDGES = 'zsh'
+
 # sets editor to Helix
 $env.config.buffer_editor = "hx"
 
@@ -9,6 +13,7 @@ $env.config.show_banner = false
 
 # load integrations
 source ~/.local/share/atuin/init.nu
+source ~/.local/share/carapace/init.nu
 source ~/.local/share/mise/init.nu
 source ~/.local/share/starship/init.nu
 source ~/.local/share/zoxide/init.nu
