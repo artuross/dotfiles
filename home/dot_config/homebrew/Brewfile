@@ -18,6 +18,7 @@ brew "atuin"                   # better shell history
 brew "awscli"                  # AWS cli
 brew "bandwhich"               # top for network
 brew "bat"                     # fancier cat
+brew "bottom"                  # better top
 brew "carapace"                # better Nushell completions
 brew "chezmoi"                 # managing dotfiles
 brew "difftastic"              # syntax aware diffs
