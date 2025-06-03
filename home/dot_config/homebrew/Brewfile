@@ -47,6 +47,7 @@ brew "rm-improved"             # safer rm
 brew "sd"                      # better sed
 brew "starship"                # Talos
 brew "stern"                   # better prompt
+brew "tealdeer"                # command examples
 brew "viddy"                   # kubernetes log
 brew "yq"                      # watching command output
 brew "zoxide"                  # jq, but for YAML

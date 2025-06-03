@@ -1,0 +1,40 @@
+[style.description]
+underline = false
+bold = false
+italic = false
+
+[style.command_name]
+foreground = "cyan"
+underline = false
+bold = false
+italic = false
+
+[style.example_text]
+foreground = "green"
+underline = false
+bold = false
+italic = false
+
+[style.example_code]
+foreground = "cyan"
+underline = false
+bold = false
+italic = false
+
+# use italics for example
+[style.example_variable]
+foreground = "cyan"
+underline = false
+bold = false
+italic = true
+
+[display]
+compact = false
+use_pager = false
+
+# auto update every 10 days
+[updates]
+auto_update = true
+auto_update_interval_hours = 240
+
+[directories]
