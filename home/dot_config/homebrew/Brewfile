@@ -6,6 +6,7 @@ cask "chatgpt"                 # ChatGPT app
 cask "docker"                  # Docker Desktop
 cask "github"                  # Github Desktop
 cask "hammerspoon"             # for custom scripts
+cask "hyperkey"                # hyperkey support
 cask "kitty"                   # terminal
 cask "raycast"                 # command center
 cask "visual-studio-code"      # editor
