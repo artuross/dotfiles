@@ -41,6 +41,7 @@ brew "lazydocker"              # Docker TUI
 brew "lazygit"                 # Git TUI
 brew "minikube"                # for spinning k8s clusters
 brew "mise"                    # tool version management
+brew "mprocs"                  # run multiple commands in parallel
 brew "noti"                    # notification popups
 brew "nushell"                 # shell
 brew "procs"                   # better ps
