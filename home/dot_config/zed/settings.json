@@ -21,6 +21,9 @@
   // don't blink cursor in the editor
   "cursor_blink": false,
 
+  // use relative line numbers in the editor
+  "relative_line_numbers": true,
+
   // show hover hints instanly
   "hover_popover_delay": 0,
 
