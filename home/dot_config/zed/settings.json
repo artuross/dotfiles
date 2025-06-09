@@ -10,6 +10,25 @@
     "metrics": false
   },
 
+  // configure must have extensions
+  "auto_install_extensions": {
+    // extensions
+    "dockerfile": true,
+    "golangci-lint": true,
+    "html": true,
+    "ini": true,
+    "just": true,
+    "lua": true,
+    "nu": true,
+    "svelte": true,
+    "terraform": true,
+    "toml": true,
+
+    // themes
+    "rose-pine-theme": true,
+    "symbols": true
+  },
+
   // font settings
   "agent_font_size": 15,
   "buffer_font_family": "FiraCode Nerd Font",
