@@ -31,6 +31,10 @@ mkdir -p ~/.local/share/mise/
 mkdir -p ~/.local/share/starship/
 /opt/homebrew/bin/starship init nu > ~/.local/share/starship/init.nu
 
+# xh
+mkdir -p ~/.local/share/xh/
+/opt/homebrew/bin/xh --generate complete-nushell > ~/.local/share/xh/completions.nu
+
 # zoxide
 mkdir -p ~/.local/share/zoxide/
 /opt/homebrew/bin/zoxide init nushell > ~/.local/share/zoxide/init.nu
