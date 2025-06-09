@@ -22,6 +22,7 @@ brew "bottom"                  # better top
 brew "carapace"                # better Nushell completions
 brew "chezmoi"                 # managing dotfiles
 brew "difftastic"              # syntax aware diffs
+brew "direnv"                  # automatic loading of environment variables
 brew "dive"                    # inspecing Docker images
 brew "dust"                    # better disk usage
 brew "eza"                     # better ls

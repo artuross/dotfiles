@@ -8,6 +8,9 @@ $env.CARAPACE_BRIDGES = 'zsh'
 # sets editor to Helix
 $env.config.buffer_editor = "hx"
 
+# configure direnv hook
+$env.config.hooks.env_change.PWD = [(source ~/.config/direnv/hook.nu)]
+
 # disable welcome message
 $env.config.show_banner = false
 
