@@ -28,6 +28,7 @@ brew "eza"                     # better ls
 brew "fd"                      # better find
 brew "fdupes"                  # finds duplicate files
 brew "fzf"                     # fuzzy completion
+brew "gh"                      # github
 brew "git"                     # vcs
 brew "git-delta"               # better diffs
 brew "helix"                   # better Vim
