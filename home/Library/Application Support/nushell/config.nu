@@ -30,3 +30,4 @@ source ~/.local/share/zoxide/init.nu
 source ~/.local/share/atuin/completions.nu
 # source ~/.local/share/just/completions.nu # carapace has better completions
 source ~/.local/share/xh/completions.nu
+source ~/.local/share/zoxide/completions.nu
