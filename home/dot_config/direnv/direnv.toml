@@ -1,1 +1,3 @@
+[global]
+# load .env files when no .envrc is present
 load_dotenv = true

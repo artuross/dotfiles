@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Use `use_op` in .envrc files to load 1Password secrets in .env files.
+# Otherwise secrets won't be automatically resolved.
+
+use_op() {
+	[[ -f .env ]] || return 0
+
+	direnv_load op run --env-file .env --no-masking -- direnv dump
+}
