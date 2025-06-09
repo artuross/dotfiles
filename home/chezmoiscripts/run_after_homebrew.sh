@@ -8,7 +8,7 @@
 # install apps
 /opt/homebrew/bin/brew bundle install --upgrade --file=~/.config/homebrew/Brewfile
 
-# generate completions below
+# generate integrations and completions below
 
 # atuin
 mkdir -p ~/.local/share/atuin/
@@ -18,6 +18,10 @@ mkdir -p ~/.local/share/atuin/
 # carapace
 mkdir -p ~/.local/share/carapace/
 /opt/homebrew/bin/carapace _carapace nushell > ~/.local/share/carapace/init.nu
+
+# just
+mkdir -p ~/.local/share/just/
+just --completions nushell > ~/.local/share/just/completions.nu
 
 # mise
 mkdir -p ~/.local/share/mise/
