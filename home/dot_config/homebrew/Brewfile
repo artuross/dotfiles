@@ -52,6 +52,7 @@ brew "starship"                # Talos
 brew "stern"                   # better prompt
 brew "tealdeer"                # command examples
 brew "viddy"                   # kubernetes log
+brew "xh"                      # HTTP client
 brew "yq"                      # watching command output
 brew "zoxide"                  # jq, but for YAML
 brew "siderolabs/tap/talosctl" # faster cd
