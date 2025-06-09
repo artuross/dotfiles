@@ -62,5 +62,10 @@
 
   // automatically adjusts search case sensitivity if the query
   // contains uppercase letters, case insensitive otherwise
-  "use_smartcase_search": true
+  "use_smartcase_search": true,
+
+  "features": {
+    // use CoPilot for inline suggestions
+    "edit_prediction_provider": "copilot"
+  }
 }
