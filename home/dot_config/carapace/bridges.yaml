@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../../../schemas/carapace-bridges.yaml
+gh: cobra
+k9s: cobra
+kubectl: cobra
+minikube: cobra
+op: cobra
+stern: cobra
+talosctl: cobra
+yq: cobra
+zed: fish
