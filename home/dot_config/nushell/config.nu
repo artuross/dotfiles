@@ -4,6 +4,7 @@ $env.Path = ($env.Path | prepend '/opt/homebrew/bin')
 # environment variables: enables completion from ZSH
 # TODO: need to figure out why some completions are not loaded
 $env.CARAPACE_BRIDGES = 'zsh'
+$env.CARAPACE_EXCLUDES = 'terraform'
 
 # sets editor to Helix
 $env.config.buffer_editor = "hx"
