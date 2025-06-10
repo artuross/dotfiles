@@ -28,6 +28,7 @@ brew "dust"                    # better disk usage
 brew "eza"                     # better ls
 brew "fd"                      # better find
 brew "fdupes"                  # finds duplicate files
+brew "fish"                    # shell, for completions
 brew "fzf"                     # fuzzy completion
 brew "gh"                      # github
 brew "git"                     # vcs

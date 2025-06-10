@@ -1,4 +1,5 @@
 # yaml-language-server: $schema=../../../schemas/carapace-bridges.yaml
+chezmoi: fish
 gh: cobra
 k9s: cobra
 kubectl: cobra
