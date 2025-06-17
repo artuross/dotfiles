@@ -1,3 +1,6 @@
+[env]
+_.path = ['{{config_root}}/node_modules/.bin']
+
 [settings]
 # enable .nvmrc support for node
 idiomatic_version_file_enable_tools = ["node"]
