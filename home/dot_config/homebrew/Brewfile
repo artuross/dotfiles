@@ -54,6 +54,7 @@ brew "sd"                      # better sed
 brew "siderolabs/tap/talosctl" # faster cd
 brew "starship"                # Talos
 brew "stern"                   # better prompt
+brew "talhelper"               # Talos GitOps
 brew "tealdeer"                # command examples
 brew "viddy"                   # kubernetes log
 brew "xh"                      # HTTP client
