@@ -17,7 +17,9 @@ mkdir -p ~/.local/share/atuin/
 
 # carapace
 mkdir -p ~/.local/share/carapace/
-/opt/homebrew/bin/carapace _carapace nushell > ~/.local/share/carapace/init.nu
+# Carapace v1.3.2 / nushell v0.105 compat patch. Waiting for new carapace releaseAdd commentMore actions
+# See carapace-sh/carapace-bin#2830
+/opt/homebrew/bin/carapace _carapace nushell | sd -s 'default $carapace_completer completer' 'default { $carapace_completer } completer' > ~/.local/share/carapace/init.nu
 
 # just
 mkdir -p ~/.local/share/just/
