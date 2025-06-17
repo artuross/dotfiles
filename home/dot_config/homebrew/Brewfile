@@ -46,6 +46,7 @@ brew "mise"                    # tool version management
 brew "mprocs"                  # run multiple commands in parallel
 brew "noti"                    # notification popups
 brew "nushell"                 # shell
+brew "posting"                 # Postman-like TUI
 brew "procs"                   # better ps
 brew "ripgrep"                 # better grep
 brew "ripgrep-all"             # ripgrep, but also PDFs, etc.
