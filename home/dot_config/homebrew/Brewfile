@@ -34,6 +34,7 @@ brew "gh"                      # github
 brew "git"                     # vcs
 brew "git-delta"               # better diffs
 brew "helix"                   # better Vim
+brew "helm"                    # kubernetes templating
 brew "hyperfine"               # for benchmarking
 brew "jq"                      # JSON processor
 brew "just"                    # better make
