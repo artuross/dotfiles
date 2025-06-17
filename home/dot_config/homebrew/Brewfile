@@ -38,6 +38,7 @@ brew "hyperfine"               # for benchmarking
 brew "jq"                      # JSON processor
 brew "just"                    # better make
 brew "k9s"                     # k8s TUI
+brew "kondo"                   # cleans up node_modules, etc. from projects
 brew "kubectx"                 # for switching context and namespaces
 brew "lazydocker"              # Docker TUI
 brew "lazygit"                 # Git TUI
