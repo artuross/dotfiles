@@ -10,6 +10,7 @@ cask "hyperkey"                # hyperkey support
 cask "kitty"                   # terminal
 cask "raycast"                 # command center
 cask "visual-studio-code"      # editor
+cask "vlc"                     # video player
 cask "zed"                     # editor
 cask "zen"                     # browser
 
