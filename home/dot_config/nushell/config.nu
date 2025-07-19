@@ -1,5 +1,12 @@
 # environment variables: PATH
-$env.Path = ($env.Path | prepend '/opt/homebrew/bin')
+$env.Path = (
+    $env.Path
+    | prepend $'($env.Home)/.docker/bin'
+    | prepend $'($env.Home)/.krew/bin'
+    | prepend '/opt/homebrew/bin'
+)
+
+$env.SSH_AUTH_SOCK = $'($env.Home)/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock'
 
 # environment variables: enables completion from ZSH
 # TODO: need to figure out why some completions are not loaded
