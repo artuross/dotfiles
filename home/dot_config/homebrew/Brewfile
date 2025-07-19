@@ -56,15 +56,15 @@ brew "ripgrep"                 # better grep
 brew "ripgrep-all"             # ripgrep, but also PDFs, etc.
 brew "rm-improved"             # safer rm
 brew "sd"                      # better sed
-brew "siderolabs/tap/talosctl" # faster cd
-brew "starship"                # Talos
-brew "stern"                   # better prompt
+brew "siderolabs/tap/talosctl" # Talos
+brew "starship"                # better prompt
+brew "stern"                   # kubernetes log
 brew "talhelper"               # Talos GitOps
 brew "tealdeer"                # command examples
-brew "viddy"                   # kubernetes log
+brew "viddy"                   # watching command output
 brew "xh"                      # HTTP client
-brew "yq"                      # watching command output
-brew "zoxide"                  # jq, but for YAML
+brew "yq"                      # jq, but for YAML
+brew "zoxide"                  # cd replacement
 
 # Fonts
 cask "font-fira-code-nerd-font"
