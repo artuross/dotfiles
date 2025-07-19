@@ -9,6 +9,7 @@ cask "hammerspoon"             # for custom scripts
 cask "hyperkey"                # hyperkey support
 cask "kitty"                   # terminal
 cask "raycast"                 # command center
+cask "redis-insight"           # Redis GUI
 cask "visual-studio-code"      # editor
 cask "vlc"                     # video player
 cask "zed"                     # editor
