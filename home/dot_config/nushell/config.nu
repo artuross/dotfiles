@@ -1,9 +1,10 @@
 # environment variables: PATH
 $env.Path = (
     $env.Path
+    | prepend '/usr/local/bin'
+    | prepend '/opt/homebrew/bin'
     | prepend $'($env.Home)/.docker/bin'
     | prepend $'($env.Home)/.krew/bin'
-    | prepend '/opt/homebrew/bin'
 )
 
 $env.SSH_AUTH_SOCK = $'($env.Home)/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock'
