@@ -23,7 +23,7 @@ mkdir -p ~/.local/share/carapace/
 
 # just
 mkdir -p ~/.local/share/just/
-just --completions nushell > ~/.local/share/just/completions.nu
+/opt/homebrew/bin/just --completions nushell > ~/.local/share/just/completions.nu
 
 # mise
 mkdir -p ~/.local/share/mise/

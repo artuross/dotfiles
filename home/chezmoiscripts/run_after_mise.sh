@@ -2,4 +2,4 @@
 
 # Installs Mise tools from HOME directory.
 
-mise install
+/opt/homebrew/bin/mise install

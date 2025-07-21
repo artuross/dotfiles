@@ -3,4 +3,4 @@
 # Installs GH CLI extensions.
 
 # CoPilot CLI
-gh extension install github/gh-copilot
+/opt/homebrew/bin/gh extension install github/gh-copilot
