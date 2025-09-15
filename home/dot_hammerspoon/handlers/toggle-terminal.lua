@@ -1,4 +1,7 @@
 -- Launches, or focuses Kitty if it's not an active window. Otherwise hides it.
+--
+-- Ensure that System Settings -> Privacy & Security -> Accessibility
+-- -> Hammerspoon is enabled.
 
 local handler = {}
 
@@ -10,7 +13,7 @@ function handler.Handler()
 
         -- fallback in case it didn't work
         if not ok then
-            current:selectMenuItem({"kitty", "Hide kitty"})
+            current:selectMenuItem({ "kitty", "Hide kitty" })
         end
 
         return
