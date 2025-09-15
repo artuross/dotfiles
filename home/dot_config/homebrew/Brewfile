@@ -38,6 +38,7 @@ brew "git-delta"               # better diffs
 brew "helix"                   # better Vim
 brew "helm"                    # kubernetes templating
 brew "hyperfine"               # for benchmarking
+brew "jj"                      # git-compatible VCS
 brew "jq"                      # JSON processor
 brew "just"                    # better make
 brew "k9s"                     # k8s TUI

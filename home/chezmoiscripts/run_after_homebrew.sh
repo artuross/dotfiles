@@ -21,6 +21,10 @@ mkdir -p ~/.local/share/carapace/
 # See carapace-sh/carapace-bin#2830
 /opt/homebrew/bin/carapace _carapace nushell | /opt/homebrew/bin/sd -s 'default $carapace_completer completer' 'default { $carapace_completer } completer' > ~/.local/share/carapace/init.nu
 
+# jj
+mkdir -p ~/.local/share/jj/
+/opt/homebrew/bin/jj util completion nushell > ~/.local/share/jj/completions.nu
+
 # just
 mkdir -p ~/.local/share/just/
 /opt/homebrew/bin/just --completions nushell > ~/.local/share/just/completions.nu
