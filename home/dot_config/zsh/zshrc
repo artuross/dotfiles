@@ -1,0 +1,44 @@
+export path=(
+    "$HOME/.krew/bin"
+    "$HOME/.docker/bin"
+    "/opt/homebrew/bin"
+    "/usr/.local/bin"
+    $path
+)
+
+export EDITOR=hx
+export SSH_AUTH_SOCK="/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+
+# one of these is doing something important...
+autoload -Uz compinit && compinit
+zmodload -i zsh/complist
+rm -f ~/.zcompdump; compinit
+autoload -U +X compinit && compinit
+autoload -U +X bashcompinit && bashcompinit
+
+# ##################################################
+# aliases
+# ##################################################
+
+# set aliases
+alias g = git
+alias k = kubectl
+alias t = talosctl
+
+alias ll = "eza --long --all"
+alias ls = "eza"
+
+# ##################################################
+# nice tools
+# ##################################################
+
+eval "$(atuin init zsh)"
+eval "$(carapace _carapace)"
+eval "$(mise activate zsh)"
+eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
+
+# load completions
+eval "$(atuin gen-completions --shell zsh)"
+eval "$(mise completion zsh)"
+eval "$(starship completions zsh)"

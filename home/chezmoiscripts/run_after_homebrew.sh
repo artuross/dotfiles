@@ -13,34 +13,41 @@
 # atuin
 mkdir -p ~/.local/share/atuin/
 /opt/homebrew/bin/atuin init nu > ~/.local/share/atuin/init.nu
+/opt/homebrew/bin/atuin init zsh > ~/.local/share/atuin/init.zsh
 /opt/homebrew/bin/atuin gen-completions --shell nushell > ~/.local/share/atuin/completions.nu
+/opt/homebrew/bin/atuin gen-completions --shell zsh > ~/.local/share/atuin/completions.zsh
 
 # carapace
 mkdir -p ~/.local/share/carapace/
-# Carapace v1.3.2 / nushell v0.105 compat patch. Waiting for new carapace releaseAdd commentMore actions
-# See carapace-sh/carapace-bin#2830
-/opt/homebrew/bin/carapace _carapace nushell | /opt/homebrew/bin/sd -s 'default $carapace_completer completer' 'default { $carapace_completer } completer' > ~/.local/share/carapace/init.nu
+/opt/homebrew/bin/carapace _carapace nushell > ~/.local/share/carapace/init.nu
+/opt/homebrew/bin/carapace _carapace zsh > ~/.local/share/carapace/init.zsh
 
 # jj
 mkdir -p ~/.local/share/jj/
 /opt/homebrew/bin/jj util completion nushell > ~/.local/share/jj/completions.nu
+/opt/homebrew/bin/jj util completion zsh > ~/.local/share/jj/completions.zsh
 
 # just
 mkdir -p ~/.local/share/just/
 /opt/homebrew/bin/just --completions nushell > ~/.local/share/just/completions.nu
+/opt/homebrew/bin/just --completions zsh > ~/.local/share/just/completions.zsh
 
 # mise
 mkdir -p ~/.local/share/mise/
 /opt/homebrew/bin/mise activate nu > ~/.local/share/mise/init.nu
+/opt/homebrew/bin/mise activate zsh > ~/.local/share/mise/init.zsh
 
 # starship
 mkdir -p ~/.local/share/starship/
 /opt/homebrew/bin/starship init nu > ~/.local/share/starship/init.nu
+/opt/homebrew/bin/starship init zsh > ~/.local/share/starship/init.zsh
 
 # xh
 mkdir -p ~/.local/share/xh/
 /opt/homebrew/bin/xh --generate complete-nushell > ~/.local/share/xh/completions.nu
+/opt/homebrew/bin/xh --generate complete-zsh > ~/.local/share/xh/completions.zsh
 
 # zoxide
 mkdir -p ~/.local/share/zoxide/
 /opt/homebrew/bin/zoxide init nushell > ~/.local/share/zoxide/init.nu
+/opt/homebrew/bin/zoxide init zsh > ~/.local/share/zoxide/init.zsh
