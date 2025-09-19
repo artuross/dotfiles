@@ -3,7 +3,6 @@ cask "1password-cli"           # 1password integration
 cask "appcleaner"              # for deleting apps
 cask "arc"                     # browser
 cask "chatgpt"                 # ChatGPT app
-cask "docker"                  # Docker Desktop
 cask "github"                  # Github Desktop
 cask "hammerspoon"             # for custom scripts
 cask "hyperkey"                # hyperkey support
