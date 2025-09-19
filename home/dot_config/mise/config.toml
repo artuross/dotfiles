@@ -6,6 +6,8 @@ _.path = ['{{config_root}}/node_modules/.bin']
 idiomatic_version_file_enable_tools = ["node"]
 
 [tools]
+"npm:@upstash/context7-mcp" = "latest"
+"pipx:wrale/mcp-server-tree-sitter" = "latest"
 bun = "1.2.14"
 go = "1.24.3"
 node = "24.1.0"
