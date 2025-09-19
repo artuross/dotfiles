@@ -1,4 +1,20 @@
 {
+  // globally installed context servers
+  "context_servers": {
+    "context7": {
+      "source": "custom",
+      "command": "context7-mcp",
+      "args": []
+    },
+    "tree_sitter": {
+      "source": "custom",
+      "command": "mcp-server-tree-sitter",
+      "args": [],
+      "enabled": false
+    }
+  },
+
+  // LLM support / panel
   "agent": {
     "default_profile": "write",
     "default_model": {
