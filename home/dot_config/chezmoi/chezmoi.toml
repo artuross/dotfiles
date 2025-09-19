@@ -1,1 +1,4 @@
 sourceDir = "~/Code/github.com/artuross/dotfiles"
+
+[diff]
+    exclude = ["scripts"]
