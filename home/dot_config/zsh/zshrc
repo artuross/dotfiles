@@ -21,12 +21,12 @@ autoload -U +X bashcompinit && bashcompinit
 # ##################################################
 
 # set aliases
-alias g = git
-alias k = kubectl
-alias t = talosctl
+alias g=git
+alias k=kubectl
+alias t=talosctl
 
-alias ll = "eza --long --all"
-alias ls = "eza"
+alias ll="eza --long --all"
+alias ls="eza"
 
 # ##################################################
 # nice tools
