@@ -14,7 +14,7 @@ idiomatic_version_file_enable_tools = ["node"]
 "pipx:wrale/mcp-server-tree-sitter" = "latest"
 
 # core tools
-bun = "1.2.14"
-go = "1.24.3"
-node = "24.1.0"
-terraform = "1.12.2"
+bun = "1.3.1"
+go = "1.25.3"
+node = "25.1.0"
+terraform = "1.13.4"
