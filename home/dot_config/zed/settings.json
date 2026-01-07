@@ -1,17 +1,27 @@
 {
   // globally installed context servers
   "context_servers": {
+    "chrome_devtools": {
+      "enabled": false,
+      "settings": {},
+    },
     "context7": {
-      "source": "custom",
       "command": "context7-mcp",
-      "args": []
+      "args": [],
+    },
+    "go_mcp": {
+      "enabled": true,
+      "settings": {},
+    },
+    "svelte-mcp": {
+      "enabled": true,
+      "settings": {},
     },
     "tree_sitter": {
-      "source": "custom",
+      "enabled": false,
       "command": "mcp-server-tree-sitter",
       "args": [],
-      "enabled": false
-    }
+    },
   },
 
   // LLM support / panel
@@ -19,20 +29,20 @@
     "default_profile": "write",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "gpt-5"
+      "model": "claude-opus-4.5",
     },
-    "always_allow_tool_actions": true
+    "always_allow_tool_actions": true,
   },
 
   // disable panels
   "collaboration_panel": {
-    "button": false
+    "button": false,
   },
 
   // disable telemetry
   "telemetry": {
     "diagnostics": false,
-    "metrics": false
+    "metrics": false,
   },
 
   // configure must have extensions
@@ -51,7 +61,7 @@
 
     // themes
     "rose-pine-theme": true,
-    "symbols": true
+    "symbols": true,
   },
 
   // font settings
@@ -66,7 +76,7 @@
   "cursor_blink": false,
 
   // use relative line numbers in the editor
-  "relative_line_numbers": true,
+  "relative_line_numbers": "wrapped",
 
   // show hover hints instanly
   "hover_popover_delay": 0,
@@ -90,13 +100,13 @@
 
     // use nushell
     "shell": {
-      "program": "nu"
+      "program": "nu",
     },
 
     // don't show breadcrumbs
     "toolbar": {
-      "breadcrumbs": false
-    }
+      "breadcrumbs": false,
+    },
   },
 
   // theme settings
@@ -104,7 +114,7 @@
   "theme": {
     "mode": "dark",
     "light": "One Light",
-    "dark": "Rosé Pine Moon"
+    "dark": "Rosé Pine Moon",
   },
 
   // automatically adjusts search case sensitivity if the query
@@ -113,6 +123,62 @@
 
   "features": {
     // use CoPilot for inline suggestions
-    "edit_prediction_provider": "copilot"
-  }
+    "edit_prediction_provider": "copilot",
+  },
+
+  // loads .env files
+  "load_direnv": "direct",
+
+  // autoformat files on save
+  "format_on_save": "on",
+
+  // custom settings for languages
+  "languages": {
+    "Go Mod": {
+      "formatter": {
+        "external": {
+          "command": "go",
+          "arguments": ["mod", "edit", "-fmt", "{buffer_path}"],
+        },
+      },
+    },
+    "Go Work": {
+      "formatter": {
+        "external": {
+          "command": "go",
+          "arguments": ["work", "edit", "-fmt", "{buffer_path}"],
+        },
+      },
+    },
+    "Go": {
+      "formatter": [
+        {
+          "external": {
+            "command": "golangci-lint",
+            "arguments": ["fmt", "--stdin"],
+          },
+        },
+        {
+          "code_action": "source.organizeImports",
+        },
+      ],
+      "language_servers": ["gopls", "golangci-lint"],
+    },
+  },
+
+  // language server configuration
+  "lsp": {
+    "golangci-lint": {
+      "initialization_options": {
+        "command": [
+          "golangci-lint",
+          "run",
+          "--issues-exit-code=1",
+          "--output.json.path=stdout",
+          "--output.text.path=",
+          "--show-stats=false",
+        ],
+      },
+    },
+  },
 }
