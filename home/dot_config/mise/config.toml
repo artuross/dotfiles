@@ -2,12 +2,23 @@
 _.path = ['{{config_root}}/node_modules/.bin']
 
 [settings]
+experimental = true
+
 # enable .nvmrc support for node
 idiomatic_version_file_enable_tools = ["node"]
+
+# enable lockfile
+lockfile = true
+
+# use bun
+npm.bun = true
 
 [tools]
 # apps
 "npm:@anthropic-ai/claude-code" = "latest"
+
+# go tools
+"go:github.com/golangci/golangci-lint/v2/cmd/golangci-lint" = "latest"
 
 # mcp servers
 "npm:@upstash/context7-mcp" = "latest"
