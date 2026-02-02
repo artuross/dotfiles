@@ -58,6 +58,15 @@
     # use delta as the pager for interactive commands
     diffFilter = delta --color-only --features=interactive
 
+[merge]
+    # use diff3 algorithm for merges, needed by mergiraf
+    conflictStyle = "diff3"
+
+# use mergiraf for syntax-aware conflict resolution
+[merge "mergiraf"]
+    name = mergiraf
+    driver = mergiraf merge --git %O %A %B -s %S -x %X -y %Y -p %P -l %L
+
 [push]
     # when pushing to a branch without remote, automatically `--set-upstream`
     autoSetupRemote = true

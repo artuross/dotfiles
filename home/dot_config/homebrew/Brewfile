@@ -45,6 +45,7 @@ brew "kondo"                   # cleans up node_modules, etc. from projects
 brew "kubectx"                 # for switching context and namespaces
 brew "lazydocker"              # Docker TUI
 brew "lazygit"                 # Git TUI
+brew "mergiraf"                # syntaxt-aware merge tool
 brew "minikube"                # for spinning k8s clusters
 brew "mise"                    # tool version management
 brew "mprocs"                  # run multiple commands in parallel
