@@ -3,23 +3,22 @@
   "context_servers": {
     "chrome_devtools": {
       "enabled": false,
-      "settings": {},
+      "command": "chrome-devtools-mcp",
+      "args": ["--acceptInsecureCerts"],
     },
     "context7": {
+      "enabled": true,
       "command": "context7-mcp",
       "args": [],
     },
     "go_mcp": {
       "enabled": true,
-      "settings": {},
+      "command": "gopls",
+      "args": ["mcp"],
     },
     "svelte-mcp": {
-      "enabled": true,
-      "settings": {},
-    },
-    "tree_sitter": {
       "enabled": false,
-      "command": "mcp-server-tree-sitter",
+      "command": "svelte-mcp",
       "args": [],
     },
   },
@@ -29,14 +28,25 @@
     "default_profile": "write",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "claude-opus-4.5",
+      "model": "claude-opus-4.6",
     },
-    "always_allow_tool_actions": true,
+    "tool_permissions": {
+      "default": "allow",
+    },
+  },
+
+  "edit_predictions": {
+    "provider": "copilot",
   },
 
   // disable panels
   "collaboration_panel": {
     "button": false,
+  },
+
+  "project_panel": {
+    "hide_gitignore": true,
+    "hide_hidden": true,
   },
 
   // disable telemetry
@@ -79,7 +89,7 @@
   "relative_line_numbers": "wrapped",
 
   // show hover hints instanly
-  "hover_popover_delay": 0,
+  "hover_popover_delay": 20,
 
   // restore only lastly closed workspace on restart
   "restore_on_startup": "last_workspace",
@@ -120,11 +130,6 @@
   // automatically adjusts search case sensitivity if the query
   // contains uppercase letters, case insensitive otherwise
   "use_smartcase_search": true,
-
-  "features": {
-    // use CoPilot for inline suggestions
-    "edit_prediction_provider": "copilot",
-  },
 
   // loads .env files
   "load_direnv": "direct",
